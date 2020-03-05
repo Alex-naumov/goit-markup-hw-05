@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    text-decoration: none;
+}
+
+.header{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav{
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link{
+    color: #0f0101;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.nav_link:hover{
+    color: #1abc9c;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #515151;
+    
+}
+.title{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+.products_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 255px;
+    
+    display: inline-block;
+    padding-bottom: 30px;
+
+}
+.card_inner{
+    background-color: #323232;
+    color: #fff;
+    padding-left: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.card_inner-price{
+    background-color:rgba(255, 255, 255, 0.4);
+    height: 40px;
+    padding: 0 14px;
+    align-items: center;
+    display: flex;
+}
+
+ .card_inner:hover {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
+.news{
+    margin-top: 100px;
+}
+.news_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 115px;
+}
+
+.news_article{
+    display: inline-block;
+    width: 350px;
+}
+.news_article-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px ;
+    color: #555252;
+}
+
+.news_article-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555252;
+}
+
+.news_btn{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px ;
+    padding: 15px 40px;
+    color: #fff;
+    background-color: #4ec6ab;
+    border-radius: 10px;
+    border: 1px solid #4ec6ab
+}
+
