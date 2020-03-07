@@ -19,8 +19,8 @@ a{
     cursor: pointer;
 }
 /*header*/
-.header{
-   
+
+.header-top__bg{
     background-color: #1abc9c;
     padding: 15px;
 }
@@ -53,6 +53,7 @@ a{
     font-size: 16px;
     color: #fff;
     padding: 15px 0;
+    display: block;
 }
 .header-link:hover{
     color: #0f0101;
@@ -84,8 +85,8 @@ a{
 }
 
 .navbar{
-    margin-top: 35px;
-    margin-bottom: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 .navbar_inner{
     display: flex;
@@ -125,6 +126,7 @@ a{
     font-size: 14px;
     padding-right: 15px;
     padding-left: 15px;
+   display: block;
 }
 .nav_link:hover{
     color: #1abc9c;
@@ -134,7 +136,7 @@ a{
 
 .sale_bg{
     background-image: url(../images/bg1.png);
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     
 }
@@ -192,59 +194,51 @@ a{
     padding-top: 95px;
     padding-bottom: 85px;
 }
-.about_inner{
+.about_list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
-.about_card{
+.about-list__item{
     width: 255px;
     align-items: center;
     
     
 }
-.about_card-bg1{
+
+.about-list__item::before{
+    content: "";
+    display: block;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.about-list__item--setting::before{
     background-image: url(../images/icon1.png);
-    width: 66px;
-    height: 66px;
-    margin: 0 auto;
-    
 }
-.about_card-img2{
+.about-list__item--money::before{
     background-image: url(../images/icon2.png);
-    width: 66px;
-    height: 66px;
-    background-repeat: no-repeat;
-    background-size: 58px 53px;
-    margin: 0 auto;
 }
-.about_card-img3{
+.about-list__item--global::before{
     background-image: url(../images/icon3.png);
-    width: 66px;
-    height: 66px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
 }
-.about_card-img4{
+.about-list__item--compass::before{
     background-image: url(../images/icon4.png);
-    width: 66px;
-    height: 66px;
-    background-repeat: no-repeat;
-    margin: 0 auto;
 }
 
-.about_card-title{
+.about_list-title{
     font-family: 'Open Sans', sans-serif;
     font-weight: 900;
     font-size: 18px;
     color: #646262;
     text-align: center;
-    padding-top: 55px;
-    padding-bottom: 30px;
+    margin-top: 55px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
-.about_card-text{
+.about_list-text{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 14px;
@@ -408,6 +402,7 @@ img {
     font-weight: 600;
     font-size: 18px ;
     color: #555252;
+    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -428,7 +423,6 @@ img {
     font-size: 14px;
     color: #555252;
     margin-bottom: 30px;
-    margin-top: 15px;
 }
 
 .news_link{
@@ -437,9 +431,10 @@ img {
     font-size: 16px ;
     padding: 15px 40px;
     color: #fff;
+    width: 100px;
     background-color: #4ec6ab;
-    border-radius: 10px;
-    border: 1px solid #4ec6ab
+    border-radius: 10px; 
+    display: block;
 }
 
 
